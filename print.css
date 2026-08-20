@@ -1,0 +1,8 @@
+/* ── Pengaturan Cetak / Print A4 ── */
+@media print{
+  @page{ size:A4 portrait; margin:0; }
+  body{ background:linear-gradient(135deg, #ece1fb, #fdeaf2 45%, #e6f4fb 100%); padding:0; margin:0; }
+  .controls, .blob{ display:none !important; }
+  .a4-page{ box-shadow:none; border:none; width:100vw; height:100vh; padding:7mm 8mm 6mm; border-radius:0; backdrop-filter:none; background:rgba(255,255,255,0.85); }
+  * { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+}
